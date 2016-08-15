@@ -4,7 +4,7 @@ Code is PHP + JavaScript.
 
 The special thing about this app is that it uses <a href="https://stripe.com/docs/checkout">Checkout</a> but allows the user to type an amount and description. So, it is pretty much a PHP version of https://stripe.com/docs/recipes/variable-amount-checkout (which is in Ruby).
 
-For convenience, this repository already includes the PHP library for Stripe. But if you wan't to reinstall from scratch, you can remove the "vendor" directory and do "composer install". It also includes local copies of bootstrap and JQuery but you can always load from a CDN instead.
+For convenience, this repository already includes the PHP library for Stripe. But if you wan't to reinstall from scratch, you can remove the "vendor" directory and do "composer install". It also includes copies of Bootstrap and JQuery but you can always download a fresh copy or load from a CDN.
 
 Steps:
  1. Set up your Stripe account.

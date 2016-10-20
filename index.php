@@ -7,7 +7,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Card Payment</title>
 
@@ -34,7 +33,7 @@
          Charge is handled by <a href="https://stripe.com">Stripe</a>.</p>
       </div>
       <p>Please type the amount and description and click the "Continue" button. This will open a form where you can enter your credit card information and
-        subimt the payment. The charge is processed directly by Stripe and no credit card information goes through Software Guru's servers.</p>
+        submit the payment. The charge is processed directly by Stripe and no credit card information goes through Software Guru's servers.</p>
 
       <?php require_once('./config.php'); ?>
 
@@ -44,8 +43,8 @@
       <form action="charge.php" method="post" class="form-horizontal">
        <input type="hidden" id="stripeToken" name="stripeToken">
         <div class="form-group">
-          <label class="control-label col-md-2 col-md-offset-2" for="amount">Amount</label>
-          <div class="input-group col-md-4">
+          <label class="control-label col-sm-2 col-sm-offset-2" for="amount">Amount</label>
+          <div class="input-group col-sm-3">
             <div class="input-group-addon">$</div>
             <input class="form-control" id="amount" name="amount" type="text" placeholder="">
             <div class="input-group-addon">USD</div>
@@ -53,13 +52,12 @@
         </div>
 
         <div class="form-group">
-          <label class="control-label col-md-2 col-md-offset-2" for="textinput">Description</label>       
+          <label class="control-label col-sm-2 col-sm-offset-2" for="textinput">Description</label>
           <input class="col-md-6" id="description" name="description" type="text" placeholder="Will appear in your statement">
         </div>
         <div class="form-group">
           <button class="center-block btn btn-success" id="Continue">Continue</button>
         </div>
-
       </form>
 
       <footer class="footer">
@@ -112,7 +110,6 @@
     handler.close();
   });
 </script>
-
 
   </body>
 </html>
